@@ -64,7 +64,7 @@ You should see a page telling you to check your email to complete setup
 1. Enter the same strong password again
 1. Uncheck the box for emails if you prefer
 1. Click "Set Password and Login".
-1. You should see a confirmation screen. Click the "Click here to proceed as {your email}"
+1. You should see a confirmation screen. Click the "Click here to proceed as {your email address}"
 1. When you see the Heroku Dashboard, you can close that tab and continue on this tutorial.
 
 
@@ -75,4 +75,14 @@ You should see a page telling you to check your email to complete setup
 1. Visit [ParsePlatform/parse-server-example](https://github.com/ParsePlatform/parse-server-example) on GitHub.
 1. Find and click the purple "Deploy to Heroku" button. ![Deploy to Heroku](assets/deploy-button.png)
 ![Location of Deploy Button](assets/location-of-deploy-button.jpg)
-1. 
+1. Since you are already logged in, you should see a screen to configure your deployment of Parse Server.
+1. Choose an App Name (Required). Can only contain letters, numbers and dashes. If you don't have one yet, you can try something like "bobs-parse-server". You will need this name again so we'll refer to it as `APP_NAME` This name must be unique within all of heroku.
+1. Scroll down to the config section and choose an `APP_ID`. It should have no spaces or special characters, and you can call it anything you want. "FirstApp" is a good choice.
+1. Next is the master key. This key alone controls everything about your parse server, and should be made very difficult to crack. It should not be your password. You can bash at your keyboard, or you can open up your terminal, and use the following command
+```
+openssl rand -base64 32 | pbcopy
+```
+1. That command will create a random secure string and copy it to your clipboard. Paste it into the `MASTER_KEY` box.
+1. Update the `SERVER_URL` with your `APP_NAME` from above with the following format "https://bobs-parse-server.herokuapp.com/parse" where you replace "bobs-parse-server" with your `APP_NAME` and make sure to use "https" instead of "http"
+1. Click "deploy for free" and watch as your server is deployed.
+1. Do not click anything else on this page yet, or close the tab since we need these settings for the next step.
