@@ -80,9 +80,10 @@ You should see a page telling you to check your email to complete setup
 1. Scroll down to the config section and choose an `APP_ID`. It should have no spaces or special characters, and you can call it anything you want. "FirstApp" is a good choice.
 1. Next is the master key. This key alone controls everything about your parse server, and should be made very difficult to crack. It should not be your password. You can bash at your keyboard, or you can open up your terminal, and use the following command
 ```
-openssl rand -base64 32 | pbcopy
+openssl rand -base64 32 | tr -d '\r\n' | pbcopy
 ```
-1. That command will create a random secure string and copy it to your clipboard. Paste it into the `MASTER_KEY` box.
+1. That command will create a random secure string, remove the return from it, and copy it to your clipboard. Paste it into the `MASTER_KEY` box.
 1. Update the `SERVER_URL` with your `APP_NAME` from above with the following format "https://bobs-parse-server.herokuapp.com/parse" where you replace "bobs-parse-server" with your `APP_NAME` and make sure to use "https" instead of "http"
 1. Click "deploy for free" and watch as your server is deployed.
 1. Do not click anything else on this page yet, or close the tab since we need these settings for the next step.
+1. When the page says "Your app was successfully deployed." You are ready for the next step, but again, don't close this tab or click on anything else on here.
