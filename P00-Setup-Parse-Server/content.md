@@ -79,7 +79,8 @@ Login if prompted, and when you see this dashboard screen, you can close the tab
 openssl rand -base64 32 | tr -d '\r\n' | pbcopy
 ```
 That command will create a 32 character random secure string, remove the return from it, and copy it to your clipboard. Paste it into the `MASTER_KEY` box. Make sure you store your `MASTER_KEY` somewhere safe. Your `MASTER_KEY` will allow access to all of your user's data, so keep it safe! It should be treated like a real key. Never put it in your code or repository.
-1. Update the `SERVER_URL` with your `APP_NAME` from above with the following format "https://bobs-parse-server.herokuapp.com/parse" where you replace "bobs-parse-server" with your `APP_NAME` and **make sure to use "https" instead of "http"**
+1. Update the `SERVER_URL` with your `APP_NAME` from above with the following format "https://bobs-parse-server.herokuapp.com/parse" where you replace "bobs-parse-server" with your `APP_NAME` and **make sure to use "https" instead of "http"**!!!
+1. Go back to the previous step. **Did you use https:// for your `SERVER_URL`**? Good. You can move onto the next step now.
 1. Click "deploy for free" and watch as your server is deployed.
 1. Do not click anything else on this page yet, or close the tab since we need these settings for the next step.
 1. When the page says "Your app was successfully deployed." You are ready for the next step, but again, don't close this tab or click on anything else on here.
@@ -93,7 +94,8 @@ That command will create a 32 character random secure string, remove the return 
 1. Find and click the purple "Deploy to Heroku" button. ![Deploy to Heroku](assets/deploy-button.png)
 1. Since you are already logged in, you should see a screen to configure your deployment of Parse Dashboard.
 1. Choose an App Name (Optional). Can only contain letters, numbers and dashes. You can let Heroku create one for you, or, you can just append "-dashboard" to your previous `APP_NAME` such as "bobs-parse-server-dashboard" This name must be unique within all of Heroku.
-1. Take the `APP_ID`, `MASTER_KEY`, and `SERVER_URL` from the previous configurations tab and paste them each in their respective fields. **Make sure that `SERVER_URL` starts with "https://"**
+1. Take the `APP_ID`, `MASTER_KEY`, and `SERVER_URL` from the previous configurations tab and paste them each in their respective fields. **Make sure that `SERVER_URL` starts with "https://"**!!!
+1. Go back to the previous step. **Did you use https:// for your `SERVER_URL`**? Good. You can move onto the next step now.
 1. Choose a `USERNAME` and `PASSWORD` for your parse dashboard. This password will be stored in plain text on heroku, so you don't want to use your normal password. How about a 12 character random string?
 ```
 openssl rand -base64 12 | tr -d '\r\n' | pbcopy
