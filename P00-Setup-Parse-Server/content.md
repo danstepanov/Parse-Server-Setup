@@ -90,7 +90,7 @@ By this point you will have deployed an instance of Parse Server, which is where
 
 ## Deploy!
 
-1. Visit [jkatzer/parse-dashboard-heroku](https://github.com/jkatzer/parse-dashboard-heroku) on GitHub.
+1. Visit [MakeSchool-Tutorials/Parse-Dashboard-Heroku](https://github.com/MakeSchool-Tutorials/Parse-Dashboard-Heroku) on GitHub.
 1. Find and click the purple "Deploy to Heroku" button. ![Deploy to Heroku](assets/deploy-button.png)
 1. Because you are already logged in, you should see a screen to configure your deployment of Parse Dashboard.
 1. Choose an App Name (Optional). Can only contain letters, numbers and dashes. You can let Heroku create one for you, or, you can just replace "parse" with "dashboard" in your previous `APP_NAME`. For example, "makestagram-dashboard-abc" This name must be unique within all of Heroku.
