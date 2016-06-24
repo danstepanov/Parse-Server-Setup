@@ -64,6 +64,13 @@ Log in if prompted, and when you see this dashboard screen, you can close the ta
 
 # Set up Parse Server
 
+> [info]
+> You will need to verify your Heroku account to complete this step. Verification requires a credit card or debit card. If you do not have a personal card, please get your parents/guardians/friends to help verify the account.
+>
+> Heroku does a "holding charge" of roughly $1 to verify the card. Once verified, it is up to you to make sure you only use the free plans. We will not be response for any charges you incur from not using the free plan!
+>
+> If you have no way to access a credit or debit card, some students have successfully used a Visa Gift Card. You can pick them up from most convenience stores and use it to verify your account then wait a few days and use the card's balance on food or any other expense.
+
 ## Deploy!
 
 1. Visit [ParsePlatform/parse-server-example](https://github.com/ParsePlatform/parse-server-example) on GitHub.
