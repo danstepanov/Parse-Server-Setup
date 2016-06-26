@@ -73,6 +73,9 @@ Log in if prompted, and when you see this dashboard screen, you can close the ta
 
 ## Deploy!
 
+> [info]
+> If you are going through this as part of the App track tutorials, please set your server up for Makestagram!
+
 1. Visit [ParsePlatform/parse-server-example](https://github.com/ParsePlatform/parse-server-example) on GitHub.
 1. Find and click the purple "Deploy to Heroku" button. ![Deploy to Heroku](assets/deploy-button.png)
 ![Location of Deploy Button](assets/location-of-deploy-button.jpg)
