@@ -87,7 +87,7 @@ Log in if prompted, and when you see this dashboard screen, you can close the ta
 openssl rand -base64 32 | tr -d '\r\n' | pbcopy
 ```
 That command will create a random 32 character secure string, remove the return from it, and copy it to your clipboard. Paste it into the `MASTER_KEY` box. Make sure you store your `MASTER_KEY` somewhere safe. Your `MASTER_KEY` will allow access to all of your user's data, so *really*, keep it safe! It should be treated like a real key. Never put it in your code or repository.
-1. Update the `SERVER_URL` with your `APP_NAME` from above with the following format  "https://`APP_NAME`.herokuapp.com/parse. For example, if your `APP_NAME` is "makestagram-parse-abc" then your `SERVER_URL` will be "https://makestagram-parse-abc.herokuapp.com/parse". **Make sure to use "https" instead of "http"**!!!
+1. Update the `SERVER_URL` with your `APP_NAME` from above with the following format  "https://`APP_NAME`.herokuapp.com/parse". For example, if your `APP_NAME` is "makestagram-parse-abc" then your `SERVER_URL` will be "https://makestagram-parse-abc.herokuapp.com/parse". **Make sure to use "https" instead of "http"**!!!
 1. Go back to the previous step. **Did you use https:// for your `SERVER_URL`**? Good. You can move onto the next step now.
 1. Click "deploy for free" and watch as your server is deployed.
 1. *Do not click anything else on this page yet, and do not close the tab* - we need these settings for the next step.
